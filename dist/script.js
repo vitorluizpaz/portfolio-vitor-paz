@@ -35,3 +35,14 @@ nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () =>
 }));
 
 document.querySelector('#current-year').textContent = new Date().getFullYear();
+
+const emailLink = document.querySelector('#send-email');
+const emailFeedback = document.querySelector('#email-feedback');
+emailLink.addEventListener('click', async () => {
+  try {
+    await navigator.clipboard.writeText('vitor.luiz.paz@live.com');
+    emailFeedback.textContent = 'Se o aplicativo de e-mail não abrir, o endereço foi copiado.';
+  } catch (_) {
+    emailFeedback.textContent = 'E-mail: vitor.luiz.paz@live.com';
+  }
+});
