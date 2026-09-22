@@ -51,3 +51,7 @@ body.light-theme .node-two{color:#45651c}
 @media(max-width:480px){.project-card-feature .project-art{min-height:205px}.emad-wordmark{font-size:62px}.music-bars{right:8%;gap:4px}.project-card-compact .project-info{padding:20px}.pipeline-flow{gap:5px}.pipeline-flow span{width:42px}.pipeline-flow i{width:11px}}
 
 .contact-action{justify-self:end;display:grid;justify-items:end;gap:8px}.email-feedback{min-height:1.4em;margin:0;color:var(--muted);font:9px var(--mono);text-align:right}.email-feedback:empty{display:none}@media(max-width:760px){.contact-action{justify-self:start;justify-items:start}.email-feedback{text-align:left}}
+.hero-email-feedback{margin:9px 0 0 2px;text-align:left}
+.art-dou{display:grid;place-items:center;padding:24px}
+.dou-art-image{position:relative;z-index:1;display:block;width:100%;height:100%;max-height:100%;object-fit:contain}
+@media(max-width:760px){.art-dou{min-height:230px;padding:14px}}

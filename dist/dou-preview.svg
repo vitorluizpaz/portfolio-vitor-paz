@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="106" y1="35" x2="910" y2="602" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#202A24"/>
+      <stop offset="1" stop-color="#151A17"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="360" y1="155" x2="636" y2="493" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F1E5"/>
+      <stop offset="1" stop-color="#DCDCCF"/>
+    </linearGradient>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#E8F2E5" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="shadow" x="326" y="114" width="362" height="444" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="16"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .28 0"/>
+      <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="620" fill="url(#bg)"/>
+  <rect width="1000" height="620" fill="url(#grid)"/>
+  <circle cx="499" cy="306" r="222" stroke="#C5F36B" stroke-opacity=".16"/>
+  <circle cx="499" cy="306" r="268" stroke="#E8F2E5" stroke-opacity=".10" stroke-dasharray="2 9"/>
+  <g opacity=".72">
+    <path d="M104 461H263" stroke="#C5F36B" stroke-opacity=".55"/>
+    <circle cx="104" cy="461" r="4" fill="#C5F36B"/>
+    <text x="104" y="443" fill="#B7C1B2" font-family="monospace" font-size="13" letter-spacing="2">PUBLICAÇÃO</text>
+    <path d="M737 177H895" stroke="#C5F36B" stroke-opacity=".55"/>
+    <circle cx="895" cy="177" r="4" fill="#C5F36B"/>
+    <text x="737" y="159" fill="#B7C1B2" font-family="monospace" font-size="13" letter-spacing="2">IDENTIFICAÇÃO</text>
+    <path d="M744 465H895" stroke="#C5F36B" stroke-opacity=".55"/>
+    <circle cx="895" cy="465" r="4" fill="#C5F36B"/>
+    <text x="744" y="447" fill="#B7C1B2" font-family="monospace" font-size="13" letter-spacing="2">DISTRIBUIÇÃO</text>
+  </g>
+  <g filter="url(#shadow)" transform="rotate(-3 500 310)">
+    <rect x="360" y="148" width="280" height="352" rx="2" fill="url(#paper)"/>
+    <rect x="360" y="148" width="280" height="352" rx="2" stroke="#FCFBF5" stroke-opacity=".64"/>
+    <path d="M382 183H618" stroke="#B9BBAE"/>
+    <text x="382" y="176" fill="#596149" font-family="monospace" font-size="11" letter-spacing="2">DIÁRIO OFICIAL</text>
+    <text x="382" y="229" fill="#22291E" font-family="Georgia,serif" font-size="32" letter-spacing="-1.8">Leis &amp; MPs</text>
+    <text x="383" y="252" fill="#69705F" font-family="monospace" font-size="9" letter-spacing="1.5">MONITORAMENTO AUTOMÁTICO</text>
+    <path d="M382 273H618" stroke="#C8CABC"/>
+    <rect x="382" y="293" width="236" height="56" rx="1" fill="#E7E8DC"/>
+    <rect x="394" y="305" width="4" height="32" fill="#789348"/>
+    <text x="410" y="317" fill="#4E5F3B" font-family="monospace" font-size="9" letter-spacing="1">LEI</text>
+    <path d="M410 328H587" stroke="#9FA493" stroke-width="3"/>
+    <path d="M410 338H560" stroke="#C0C4B7" stroke-width="3"/>
+    <rect x="382" y="360" width="236" height="56" rx="1" fill="#E7E8DC"/>
+    <rect x="394" y="372" width="4" height="32" fill="#789348"/>
+    <text x="410" y="384" fill="#4E5F3B" font-family="monospace" font-size="9" letter-spacing="1">MEDIDA PROVISÓRIA</text>
+    <path d="M410 395H587" stroke="#9FA493" stroke-width="3"/>
+    <path d="M410 405H540" stroke="#C0C4B7" stroke-width="3"/>
+    <path d="M382 442H618" stroke="#C8CABC"/>
+    <circle cx="391" cy="466" r="4" fill="#789348"/>
+    <text x="403" y="470" fill="#69705F" font-family="monospace" font-size="9" letter-spacing="1">ENVIADO AO TELEGRAM</text>
+  </g>
+  <text x="48" y="574" fill="#A3AD9E" font-family="monospace" font-size="11" letter-spacing="2">DOU LEIS E MPS</text>
+  <text x="952" y="574" text-anchor="end" fill="#778173" font-family="monospace" font-size="10" letter-spacing="1.5">PYTHON · FASTAPI</text>
+</svg>
