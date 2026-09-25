@@ -20,7 +20,10 @@
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
       <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
         <a href="#projetos">Projetos</a><a href="#sobre">Sobre</a><a href="#tecnologias">Tecnologias</a><a href="#contato">Contato</a>
-        <button class="language-toggle mono" type="button" aria-label="Mudar idioma para inglês" lang="en">EN</button>
+        <div class="language-toggle" role="group" aria-label="Idioma">
+          <button type="button" data-language="pt-BR" lang="pt-BR" aria-pressed="true" title="Português">PT</button>
+          <button type="button" data-language="en" lang="en" aria-pressed="false" title="Inglês">EN</button>
+        </div>
         <button class="theme-toggle" type="button" aria-label="Ativar tema claro" title="Alternar tema"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"/></svg></button>
       </nav>
     </header>
