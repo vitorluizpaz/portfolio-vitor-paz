@@ -116,7 +116,7 @@ function setLanguage(language) {
   document.querySelector('.hero-visual').setAttribute('aria-label', isEnglish ? 'Illustrative code window' : 'Janela de código ilustrativa');
   languageButton.textContent = isEnglish ? 'PT' : 'EN';
   languageButton.setAttribute('aria-label', isEnglish ? 'Change language to Portuguese' : 'Mudar idioma para inglês');
-  languageButton.title = isEnglish ? 'Switch to Portuguese' : 'Mudar para português';
+  languageButton.title = isEnglish ? 'Switch to Portuguese' : 'Mudar idioma para inglês';
   languageButton.lang = isEnglish ? 'pt-BR' : 'en';
   menuButton.setAttribute('aria-label', menuButton.getAttribute('aria-expanded') === 'true'
     ? (isEnglish ? 'Close menu' : 'Fechar menu')
