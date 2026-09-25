@@ -8,6 +8,7 @@ const descriptionMeta = document.querySelector('meta[name="description"]');
 
 const ptToEn = {
   'Vitor Paz — Desenvolvedor em formação': 'Vitor Paz — Aspiring Developer',
+  'Vitor Paz, início': 'Vitor Paz, home',
   'Pular para o conteúdo': 'Skip to content',
   'Mudar idioma para inglês': 'Change language to English',
   'Mudar idioma para português': 'Change language to Portuguese',
@@ -32,6 +33,8 @@ const ptToEn = {
   'PORTFÓLIO / 2026': 'PORTFOLIO / 2026',
   'PROJETOS SELECIONADOS': 'SELECTED PROJECTS',
   'Projetos': 'Projects',
+  'Sobre': 'About',
+  'Contato': 'Contact',
   'Quatro projetos reais.': 'Four real projects.',
   'Código, produto e aprendizado.': 'Code, product, and learning.',
   'AUTOMAÇÃO / 01': 'AUTOMATION / 01',
@@ -68,6 +71,7 @@ const ptToEn = {
   'Pipeline de dados': 'Data pipelines',
   'Automação': 'Automation',
   'CONTATO': 'CONTACT',
+  '/ CONTATO': '/ CONTACT',
   'ABERTO A NOVAS CONVERSAS': 'OPEN TO NEW CONVERSATIONS',
   'Tem uma ideia?': 'Have an idea?',
   'Vamos trocar.': 'Let’s talk.',
@@ -108,6 +112,7 @@ function setLanguage(language) {
     ? 'Portfolio of Vitor Luiz Paz Roseno da Silva, an aspiring developer based in Florianópolis, Brazil.'
     : 'Portfólio de Vitor Luiz Paz Roseno da Silva, desenvolvedor em formação em Florianópolis, Brasil.';
   nav.setAttribute('aria-label', isEnglish ? 'Main navigation' : 'Navegação principal');
+  document.querySelector('.brand').setAttribute('aria-label', isEnglish ? 'Vitor Paz, home' : 'Vitor Paz, início');
   document.querySelector('.hero-visual').setAttribute('aria-label', isEnglish ? 'Illustrative code window' : 'Janela de código ilustrativa');
   languageButton.textContent = isEnglish ? 'PT' : 'EN';
   languageButton.setAttribute('aria-label', isEnglish ? 'Change language to Portuguese' : 'Mudar idioma para inglês');
