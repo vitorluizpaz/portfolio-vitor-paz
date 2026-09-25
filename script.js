@@ -1,6 +1,6 @@
 const body = document.body;
 const themeButton = document.querySelector('.theme-toggle');
-const languageButton = document.querySelector('.language-toggle');
+const languageButtons = document.querySelectorAll('.language-toggle [data-language]');
 const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.site-nav');
 const themeMeta = document.querySelector('meta[name="theme-color"]');
@@ -114,10 +114,14 @@ function setLanguage(language) {
   nav.setAttribute('aria-label', isEnglish ? 'Main navigation' : 'Navegação principal');
   document.querySelector('.brand').setAttribute('aria-label', isEnglish ? 'Vitor Paz, home' : 'Vitor Paz, início');
   document.querySelector('.hero-visual').setAttribute('aria-label', isEnglish ? 'Illustrative code window' : 'Janela de código ilustrativa');
-  languageButton.textContent = isEnglish ? 'PT' : 'EN';
-  languageButton.setAttribute('aria-label', isEnglish ? 'Change language to Portuguese' : 'Mudar idioma para inglês');
-  languageButton.title = isEnglish ? 'Switch to Portuguese' : 'Mudar idioma para inglês';
-  languageButton.lang = isEnglish ? 'pt-BR' : 'en';
+  document.querySelector('.language-toggle').setAttribute('aria-label', isEnglish ? 'Language' : 'Idioma');
+  languageButtons.forEach((button) => {
+    const isSelected = button.dataset.language === currentLanguage;
+    button.setAttribute('aria-pressed', String(isSelected));
+    button.title = button.dataset.language === 'en'
+      ? (isEnglish ? 'English' : 'Inglês')
+      : (isEnglish ? 'Portuguese' : 'Português');
+  });
   menuButton.setAttribute('aria-label', menuButton.getAttribute('aria-expanded') === 'true'
     ? (isEnglish ? 'Close menu' : 'Fechar menu')
     : (isEnglish ? 'Open menu' : 'Abrir menu'));
@@ -145,7 +149,7 @@ themeButton.addEventListener('click', () => {
   try { localStorage.setItem('vitor-portfolio-theme', nextTheme); } catch (_) { /* tema segue funcional sem persistência */ }
 });
 
-languageButton.addEventListener('click', () => setLanguage(currentLanguage === 'en' ? 'pt-BR' : 'en'));
+languageButtons.forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.language)));
 
 menuButton.addEventListener('click', () => {
   const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
