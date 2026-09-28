@@ -64,3 +64,8 @@ body.light-theme .node-two{color:#45651c}
 .language-toggle button:hover{color:var(--accent)}
 .language-toggle button[aria-pressed="true"]{background:var(--surface-2);color:var(--text)}
 .language-toggle button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.art-acha{display:grid;place-items:center;background:var(--surface-2)}
+.acha-wordmark{display:flex;align-items:baseline;gap:6px;font-size:clamp(25px,3vw,39px);letter-spacing:-.075em;font-weight:500}
+.acha-wordmark span{color:var(--muted)}
+.acha-wordmark strong{font-weight:800;color:var(--accent)}
+.acha-caption{position:absolute;left:22px;bottom:19px;color:var(--muted);font-size:8px}
