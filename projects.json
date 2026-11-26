@@ -1,0 +1,14 @@
+{
+  "updated": "2026-11-26",
+  "projects": [
+    {
+      "title": "Trilha Matemática",
+      "description": "An adaptive study platform for combinatorics and probability. Exercises are organized into learning paths, and the sequence adjusts as a student progresses.",
+      "category": "Mathematics",
+      "year": "2026",
+      "status": "In development",
+      "tags": ["Combinatorics", "Probability", "Education"],
+      "links": {}
+    }
+  ]
+}
