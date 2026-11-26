@@ -2,13 +2,47 @@
   "updated": "2026-11-26",
   "projects": [
     {
-      "title": "Trilha Matemática",
-      "description": "An adaptive study platform for combinatorics and probability. Exercises are organized into learning paths, and the sequence adjusts as a student progresses.",
-      "category": "Mathematics",
+      "title": "fem-verified",
+      "description": "A verification-first finite element project built on FEniCSx. A manufactured Poisson solution on a square and a Gmsh-generated L-shape, with observed convergence rates asserted in the test suite.",
+      "category": "Numerical Methods",
       "year": "2026",
-      "status": "In development",
-      "tags": ["Combinatorics", "Probability", "Education"],
-      "links": {}
+      "status": "Open source",
+      "tags": ["FEM", "Numerical Methods", "FEniCSx", "Gmsh"],
+      "links": {
+        "repo": "https://github.com/vitorluizpaz/fem-verified"
+      }
+    },
+    {
+      "title": "DOU Laws and Provisional Measures",
+      "description": "An end-to-end ingestion pipeline for Brazil's federal gazette. It fetches, parses, normalizes, and stores publications, using content fingerprints to make inserts idempotent and an authenticated API to expose auditable results.",
+      "category": "Data Engineering",
+      "year": "2026",
+      "status": "Public repository",
+      "tags": ["Python", "FastAPI", "PostgreSQL", "Docker"],
+      "links": {
+        "repo": "https://github.com/vitorluizpaz/dou-laws-and-provisional-measures"
+      }
+    },
+    {
+      "title": "Indicium Data Pipeline",
+      "description": "A containerized ELT pipeline across CSV sources and PostgreSQL databases, with per-table extractors and Airflow DAGs for repeatable execution.",
+      "category": "Data Engineering",
+      "year": "2025",
+      "status": "Public repository",
+      "tags": ["Python", "Meltano", "Apache Airflow", "PostgreSQL", "Docker"],
+      "links": {
+        "repo": "https://github.com/vitorluizpaz/indicium-data-pipeline"
+      }
+    },
+    {
+      "title": "Hyperledger Fabric Smart Contract",
+      "description": "Deterministic chaincode for inventory registration and traceability, enforcing role-based access control and validating every state transition against invariants.",
+      "category": "Blockchain",
+      "year": "2024",
+      "status": "Coursework",
+      "tags": ["Go", "Hyperledger Fabric", "Minifabric"],
+      "links": {},
+      "note": "Coursework project"
     }
   ]
 }

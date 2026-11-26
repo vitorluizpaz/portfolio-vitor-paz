@@ -62,9 +62,13 @@
       );
     }
 
+    const fallback = project.note
+      ? escapeHTML(project.note)
+      : "Private repository";
+
     const linkMarkup = links.length
       ? `<div class="work-item__links">${links.join("")}</div>`
-      : '<p class="work-item__links">Private repository</p>';
+      : `<p class="work-item__links">${fallback}</p>`;
 
     const tags =
       Array.isArray(project.tags) && project.tags.length

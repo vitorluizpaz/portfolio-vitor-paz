@@ -62,6 +62,7 @@ Edit `projects.json` and add an object to the `projects` array:
 | `links.site`  | no       | If present, the title links to the live project.         |
 | `links.repo`  | no       | Adds a repository link.                                  |
 | `links`       | no       | With no links, the entry reads “Private repository”.      |
+| `note`        | no       | Text shown when there are no links, e.g. `Coursework project`. |
 
 The `updated` field at the top of the file is shown as “Updated November 2026”
 in the work section. Every entry renders on its own; no other code changes are
