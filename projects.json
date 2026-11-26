@@ -17,7 +17,7 @@
       "description": "An end-to-end ingestion pipeline for Brazil's federal gazette. It fetches, parses, normalizes, and stores publications, using content fingerprints to make inserts idempotent and an authenticated API to expose auditable results.",
       "category": "Data Engineering",
       "year": "2026",
-      "status": "Public repository",
+      "status": "Open source",
       "tags": ["Python", "FastAPI", "PostgreSQL", "Docker"],
       "links": {
         "repo": "https://github.com/vitorluizpaz/dou-laws-and-provisional-measures"
@@ -28,7 +28,7 @@
       "description": "A containerized ELT pipeline across CSV sources and PostgreSQL databases, with per-table extractors and Airflow DAGs for repeatable execution.",
       "category": "Data Engineering",
       "year": "2025",
-      "status": "Public repository",
+      "status": "Open source",
       "tags": ["Python", "Meltano", "Apache Airflow", "PostgreSQL", "Docker"],
       "links": {
         "repo": "https://github.com/vitorluizpaz/indicium-data-pipeline"
