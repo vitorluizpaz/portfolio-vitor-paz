@@ -1,8 +1,8 @@
 # vitorpaz.dev
 
 Personal site for Vitor Paz: mathematics, physics, and software. Written in
-English and built with plain HTML, CSS, and JavaScript — no build step, no
-framework, no client-side dependencies beyond the web fonts.
+English with plain HTML, CSS, and JavaScript — no framework and no client-side
+dependencies beyond the web fonts.
 
 The work section lists only projects related to mathematics.
 
@@ -10,11 +10,14 @@ The work section lists only projects related to mathematics.
 
 ```
 .
-├── index.html      # page markup
-├── styles.css      # typography and layout
-├── script.js       # loads projects.json
-├── projects.json   # ← add projects here
+├── index.html          # page markup
+├── styles.css          # typography and layout
+├── script.js           # loads projects.json
+├── projects.json       # ← add projects here
 ├── favicon.svg
+├── wrangler.jsonc      # Cloudflare Worker serving vitorpaz.dev
+├── scripts/build.sh    # copies the site into dist/
+├── package.json        # build and deploy scripts
 └── README.md
 ```
 
@@ -58,7 +61,7 @@ Edit `projects.json` and add an object to the `projects` array:
 | `tags`        | no       | Comma-separated list under the description.              |
 | `links.site`  | no       | If present, the title links to the live project.         |
 | `links.repo`  | no       | Adds a repository link.                                  |
-| `links`       | no       | With no links, the card reads “Private repository”.      |
+| `links`       | no       | With no links, the entry reads “Private repository”.      |
 
 The `updated` field at the top of the file is shown as “Updated November 2026”
 in the work section. Every entry renders on its own; no other code changes are
@@ -66,11 +69,23 @@ needed.
 
 ## Deploy
 
-The site is static and works without configuration on:
+### Cloudflare (vitorpaz.dev)
 
-- **Cloudflare Pages** — build directory `/`, no build command.
-- **GitHub Pages** — publish the `main` branch from the repository root.
-- **Netlify / Vercel** — any static site preset.
+The domain is served by the Cloudflare Worker `portfolio-vitor-paz`, which reads
+the static assets from `dist/`.
+
+```bash
+npm run deploy
+```
+
+This rebuilds `dist/` and runs `wrangler deploy`. It requires a logged-in
+Wrangler session (`npx wrangler login`).
+
+### GitHub Pages
+
+Every push to `main` also rebuilds the mirror at
+<https://vitorluizpaz.github.io/portfolio-vitor-paz/>. Pages serves the
+repository root directly, so no build is needed there.
 
 ## Credits
 

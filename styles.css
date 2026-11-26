@@ -130,13 +130,7 @@ a {
 }
 
 .nav-github {
-  display: inline-flex;
-  align-items: baseline;
-  gap: 0.3rem;
-}
-.nav-github span {
-  font-size: 0.72em;
-  color: var(--faint);
+  color: var(--muted);
 }
 
 /* -------------------------------- hero ---------------------------------- */

@@ -1,0 +1,8 @@
+{
+  "name": "vitorpaz.dev",
+  "private": true,
+  "scripts": {
+    "build": "sh scripts/build.sh",
+    "deploy": "npm run build && npx --yes wrangler deploy"
+  }
+}

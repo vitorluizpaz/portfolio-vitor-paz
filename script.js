@@ -53,12 +53,12 @@
     const links = [];
     if (site) {
       links.push(
-        `<a href="${escapeHTML(site)}" target="_blank" rel="noopener noreferrer">Visit site <span aria-hidden="true">↗</span></a>`
+        `<a href="${escapeHTML(site)}" target="_blank" rel="noopener noreferrer">Visit site</a>`
       );
     }
     if (repo) {
       links.push(
-        `<a href="${escapeHTML(repo)}" target="_blank" rel="noopener noreferrer">Repository <span aria-hidden="true">↗</span></a>`
+        `<a href="${escapeHTML(repo)}" target="_blank" rel="noopener noreferrer">Repository</a>`
       );
     }
 
